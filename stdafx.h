@@ -9,7 +9,7 @@
 #include <time.h>
 #include <stdio.h>
 #include <tchar.h>
-
+#include <string.h>
 
 
 // TODO: Hier auf zusätzliche Header, die das Programm erfordert, verweisen.

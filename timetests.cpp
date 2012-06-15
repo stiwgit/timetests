@@ -3,13 +3,15 @@
 
 #include "stdafx.h"
 
-
+// So jetzt adde ich mak ein paar Kommentare
 #define T 0x12345678l; //1302551399;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	time_t t=time(0);
-	struct tm* tms=gmtime(&t);
+	struct tm _tms;
+	gmtime_s(&_tms,&t);
+	struct tm *tms=&_tms;
 	
 
 	printf("t=%d\n",t);
